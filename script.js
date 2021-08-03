@@ -94,3 +94,12 @@ const arr = ['i am a kity','nuice kitty','written in js','kittyy kitty '];
 let random=  arr[Math.floor(arr.length * Math.random())]
    
   console.log(random);
+
+  const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                    ["Lucinda", "Jacc", "Neff", "Snoop"],
+                    ["Petunia", ["Baked Goods", "Waldo"]]];
+    
+    whereIsWaldo.splice(1,1,'hamza');
+    whereIsWaldo[2].splice(2,1,'ehljdl')
+    console.log(whereIsWaldo);
+    console.log(whereIsWaldo[3][1][1])
