@@ -41,7 +41,9 @@
   console.log(arr)
  let age= 19;
   if(age<=19){
-      console.log('you are still a teenagerer')
+      console.log('you are still a teenagerer');
+
+      console.log('hello world')
   }else{
       console.log('you can go in')
   }
