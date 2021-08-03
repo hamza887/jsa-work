@@ -28,3 +28,20 @@
  }
 
  console.log(sei.curriclum.valuable);
+
+ let greeting= 'Hi there friend';
+  let gg=greeting.split('  ')
+ console.log(gg);
+
+ const arr=['hello','hdlfkjd','dhfld'];
+  const arr2= arr.push('jasin');
+  const ia= ['esin','jdlfk','madeline'];
+  const combine= arr.concat(ia);
+  console.log(combine);
+  console.log(arr)
+ let age= 19;
+  if(age<=19){
+      console.log('you are still a teenagerer')
+  }else{
+      console.log('you can go in')
+  }
