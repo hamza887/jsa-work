@@ -129,4 +129,70 @@ const square=(num)=>{
  console.log(minusone('kdhfld'));
 
 
+ const makeSentence =(str1, str2, str3)=>{
+         console.log(`oh boy ${str1} ${str2} and i also ${str3}`)
+ }
+   makeSentence('hello','ia m','hamza');
+
+   const getLastElement=(arr)=>{
+       return arr.pop();
+   }
+   console.log(getLastElement([[1, 2, 3], [4, 5, 6]]) );
+
+   const divideThreeNums =(num1,num2,num3)=>{
+       return (num1*num3)/num2
+   }
+    console.log(divideThreeNums(10,5,2));
+    console.log(divideThreeNums(30,2,9));
+
+    const captalize=(str)=>{
+        return str
+        .toLowerCase()
+        .split(' ')
+        .map(word=> word.charAt(0).toUpperCase()+ word.slice(1))
+        .join(' ')
+    }
+    console.log( captalize('hello i am HAmza'));
+
+    const hellostring=(num1,num2,num3)=>{
+      const convert= num1+num2+num3;
+      return convert.toString()
+    }
+    console.log(hellostring(2,4,4));
+
+///// week 1 day 4
+
+const sayHello =()=>{
+    return 'hello world'
+}
+ console.log( sayHello())
+
+
+ const printMessage= (message)=>{
+     return message
+ }
+ console.log(printMessage('hello'));
+
+ const getSquare=(a)=>{
+    return a**2
+ }
+ console.log(getSquare(2));
+
+ const reverseMessage =(message)=>{
+     return message.split('').reverse().join('');
+ }
  
+ console.log( reverseMessage('hello'));
+
+ const multiply =(a,b=2)=>{
+    return a*b
+ }
+ console.log(multiply(2, 5));
+  // should return 10
+console.log(multiply(3)); 
+//should return 6
+const makePerson=(firstname,lastname)=>{
+   return {'firstname':firstname,'lastname':lastname}
+}
+
+console.log(makePerson('hamza','hell'));
