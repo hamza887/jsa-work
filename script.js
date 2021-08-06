@@ -196,3 +196,49 @@ const makePerson=(firstname,lastname)=>{
 }
 
 console.log(makePerson('hamza','hell'));
+
+let sum=0;
+const addtosum=(num)=>{
+    let sume=0;
+    return sum +=num
+}
+addtosum(30)
+addtosum(5)
+console.log(addtosum(-6));
+
+ const getArraySum=(arr)=>{
+  let sum=0;
+  for (let i = 0; i < arr.length; i++) {
+      sum =sum +arr[i]
+  }
+  return sum
+ }
+console.log(getArraySum([23, 25, -46, 7, 123]));
+
+
+const arrayiflyString=(string)=>{
+    return string.split(' ')
+}
+console.log(arrayiflyString('Hello I am hamza'));
+
+/** Starter Code */
+function add(a, b) {
+    return a + b;
+  }
+  
+  /** Your Solution */
+  function myFunction(func, arg1, arg2) {
+    if(func===add){
+        return add(arg1,arg2)
+    }
+  }
+
+  const testfunc=()=>{
+      return function(){
+          return 'this works'
+      }
+  }
+  console.log(testfunc()());
+
+  
+  
