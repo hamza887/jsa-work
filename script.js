@@ -104,9 +104,29 @@
 //     console.log(whereIsWaldo);
 //     console.log(whereIsWaldo[3][1][1])
 
-const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
-// console.log(nums);
-// const sortedNums=nums.sort();
-nums.sort()
+// const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+// // console.log(nums);
+// // const sortedNums=nums.sort();
+// nums.sort()
+// // console.log(nums[Math.round(nums.length/2)-1]);
 // console.log(nums[Math.round(nums.length/2)-1]);
-console.log(nums[Math.round(nums.length/2)-1])
+
+const pali=(num)=>{
+    const reverse= num.split('').reverse().join('')
+    return (num===reverse)?true:false
+}
+
+console.log(pali('racecar'));
+
+const square=(num)=>{
+     return Math.pow(num,3)
+}
+ console.log(square(2));
+
+ const minusone =(num)=>{
+     return (typeof num==='number')?num-1:num;
+ }
+ console.log(minusone('kdhfld'));
+
+
+ 
