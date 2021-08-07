@@ -250,5 +250,67 @@ function add(a, b) {
 
    console.log(Math.max(...arrmath));
 
-  
+  const programminglanguages=['java','es6','python','hello'];
+
+ const programs=(pro)=>{
+     pro.forEach((hello)=>{
+         console.log('hello this is  '+ hello.toUpperCase())
+     })
+ }
+ programs(['java','es6','python','hello']);
+
+ const hnumbers = [
+	15,
+	18,
+	3921,
+	327,
+	88,
+	1235,
+	1,
+	55855,
+	34,
+	5,
+	9,
+	9019,
+	156,
+	874,
+	76,
+	444,
+	12346,
+];
+
+ const newsquare= hnumbers.map(hh=> console.log(Math.pow(hh,2)))
+
+ const newfilter=hnumbers.filter(hh=> hh<10).join('');
+//  newfilter.join('')
+  console.log(newfilter);
+
+  const findnumbers=hnumbers.find(hh=> hh<10);
+  console.log(findnumbers);
+
+  const instructors = [
+	{
+		name: 'Madeline',
+		location: 'Los Angeles',
+		likes: ['coding', 'e-commerce', 'software engineering'],
+	},
+	{
+		name: 'Esin',
+		location: 'Austin',
+		likes: ['cats', 'software development', 'avocados'],
+	},
+	{
+		name: 'Mathilda',
+		location: 'Boston',
+		likes: ['algorithms', 'chess', 'WSL'],
+	},
+	{
+		name: 'Paul',
+		location: 'Atlanta',
+		likes: ['coding', 'JavaScript', 'teaching'],
+	},
+];
+
+const ia= instructors.map(hh=>console.log(`Hello ${hh.name} ! How are you today`));
+const likes= instructors.map(hh=>console.log(`Do you like ${hh.likes[0]} or ${hh.likes[1]} better`))
   
