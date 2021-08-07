@@ -240,5 +240,15 @@ function add(a, b) {
   }
   console.log(testfunc()());
 
+  const numbers=1;
+  const num2=2;
+  const num3=3
+  const helo=Math.max(numbers,num2,num3);
+
+   console.log(helo);
+   const arrmath=[2,3,4,5,67,5]
+
+   console.log(Math.max(...arrmath));
+
   
   
