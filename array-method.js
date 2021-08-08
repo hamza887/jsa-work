@@ -23,10 +23,37 @@
     console.log(EvenArr);
 
 
-     //////////  FIND find aparticlullat word or antyhign form an array
+     //////////  FIND   find aparticlullat word or antyhign form an array
 
      const findDivisible= nums.find(hh=> hh%5===0);
      console.log(findDivisible);
 
      const findWord=panagram.find(hh=>hh.length>4);
      console.log(findWord);
+
+     //////  Find Index /// 
+
+     const indexdivide= nums.findIndex(hh=>hh%3===0);
+     console.log(indexdivide);
+     const findcharacter= panagram.findIndex(hh=> hh.length<2);
+     console.log(findcharacter);
+
+     /////////   FOR EACH
+
+     const multiplynums=nums.forEach(hh=>console.log( hh*3));
+
+     const exclaim=panagram.forEach(hh=>console.log( hh.toUpperCase()));
+
+
+     //////////  MAP  MAKE A NEW ARRAY
+
+     const multiplymap= nums.map(hh=>hh*100)
+     console.log(multiplymap);
+     const uppercase=panagram.map(hh=> console.log(hh.toUpperCase()));
+
+     /////// Some 
+     
+        const somearr= nums.some(hh=>hh%7===0);
+        console.log(somearr);
+        const letter= panagram.some(hh=> hh.includes('a'));
+        console.log(letter);
