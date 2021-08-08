@@ -58,7 +58,10 @@ const minions = [
   const findme= (num)=> num>6 || num>7 ;
  console.log(captalizeminion.some(findme));
 
- console.log( captalizeminion.sort());
+ let haa=captalizeminion.sort((minon1,minion2)=>{
+       return minon1.length -minion2  
+ });
+ console.log(haa);
 
 
 
