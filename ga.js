@@ -42,3 +42,27 @@ const Building1= new Building('hamza building','Manhattan');
 console.log(Building1);
 Building1.addTenant();
 
+/////////// MAKING AN ATM ///////////////////////
+
+
+class ATM{
+    constructor(type,money){
+        this.type=type;
+        this.money=money;
+    }
+    withdraw(amount){
+        const withdrawmoney= this.money-amount;
+        console.log(`Your Withdraw money has been approved ${withdrawmoney}$`);
+        console.log('total money left', this.money)
+    }
+    deposit(amount){
+      const increase= this.money+amount;
+      console.log(increase);
+    }
+}
+
+const hamza= new ATM('checking',200)
+console.log(hamza);
+hamza.withdraw(120);
+hamza.deposit(200)
+
