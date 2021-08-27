@@ -22,10 +22,14 @@ class Movie{
         console.log(this.title, ' play it plz');
     }
 }
-
-const Movie1= new Movie('hamza film','120');
+class actionmovie extends Movie{
+    fav(){
+        console.log(this.title," is the my fav");
+    }
+}
+const Movie1= new actionmovie('hamza film','120');
 console.log(Movie1);
-Movie1.play();
+Movie1.fav();
 
 
 class Building{
@@ -66,3 +70,28 @@ console.log(hamza);
 hamza.withdraw(120);
 hamza.deposit(200)
 
+
+/////// USER NAME ////////
+
+class myUser{
+    constructor(username,password){
+        this.username=username;
+        this.password=password
+    }
+    changepassword(change){
+        console.log('your password has been changed to ', change);
+        this.password= change
+    }
+}
+class Admin extends myUser{
+    override(name,password){
+        this.username=name;
+        this.password=password;
+        console.log('The username is ',name ,'the password is ',password);
+    }
+}
+const acc1= new Admin('hamza','hamza123');
+acc1.changepassword('hamzabutvcgfrjgt');
+console.log(acc1);
+acc1.override('john','john 123')
+console.log(acc1);
