@@ -67,37 +67,62 @@ class Person{
 
 /////////   Story of new person /////////
 
-const timmy= new Person('Timmy');
+// const timmy= new Person('Timmy');
 
- for (let i = 0; i <5; i++) {
-     timmy.ageUp()
+//  for (let i = 0; i <5; i++) {
+//      timmy.ageUp()
      
- }
- console.log(timmy);
+//  }
+//  console.log(timmy);
 
- for (let i = 0; i <5; i++) {
-     timmy.eat()
+//  for (let i = 0; i <5; i++) {
+//      timmy.eat()
      
+//  }
+//  console.log(timmy);
+
+//  for (let i = 0; i <5; i++) {
+//     timmy.exercise()
+    
+// }
+// console.log(timmy);
+
+// for (let i = 0; i <9; i++) {
+//     timmy.ageUp()
+    
+// }
+// console.log(timmy);
+
+// const Gus= new Hamster("Gus");
+
+// Gus.owner='timmy';
+
+// console.log( timmy.buyHamster(Gus));
+
+// timmy.eat();
+// timmy.eat()
+
+///////////   Donut Adventure ///////
+
+ class Hero{
+     constructor(name){
+         this.name=name;
+         this.health=100;
+         this.weapons={sprinkleSpray: 5,
+            sugarShock: 10}
+         this.catchPhrases=['i\'m fresher than day old pizza',
+         'you can\'t count my calories']
+        }
+        talkSass(){
+            console.log(this.catchPhrases[Math.floor(this.catchPhrases.length * Math.random())]);
+        }
+        announceHealth(){
+            console.log('The current Health is ',this.health);
+        }
+        fight(){
+            console.log('i\'m ready to rumble');
+        }
  }
- console.log(timmy);
 
- for (let i = 0; i <5; i++) {
-    timmy.exercise()
-    
-}
-console.log(timmy);
-
-for (let i = 0; i <9; i++) {
-    timmy.ageUp()
-    
-}
-console.log(timmy);
-
-const Gus= new Hamster("Gus");
-
-Gus.owner='timmy';
-
-console.log( timmy.buyHamster(Gus));
-
-timmy.eat();
-timmy.eat()
+ const hero1= new Hero('hamza')
+ console.log(hero1.talkSass());
