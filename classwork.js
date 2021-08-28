@@ -119,10 +119,59 @@ class Person{
         announceHealth(){
             console.log('The current Health is ',this.health);
         }
-        fight(){
-            console.log('i\'m ready to rumble');
+        fight(enemy){
+            const  keysweapons= Object.keys(this.weapons);
+       const randomweapon=keysweapons[Math.floor(Math.random()*keysweapons.length)]
+        console.log(keysweapons, 'my weapon');
+        console.log(randomweapon, 'finally my waepons');
+        enemy.health-=this.weapons[randomweapon];
+        console.log(`${enemy.name} got hit by ${randomweapon}! His health is now ${enemy.health}`);
         }
  }
+const Dougie= new Hero('Dougie')
+Dougie.talkSass();
+Dougie.announceHealth()
+//  const hero1= new Hero('hamza')
+//  console.log(hero1);
 
- const hero1= new Hero('hamza')
- console.log(hero1.talkSass());
+ /// OUR ENEMY //
+
+ class Enemy{
+     constructor(name){
+         this.name=name;
+         this.health=100;
+         this.weapons={
+            pepperoniStars: 5,
+            cheeseGrease: 10    
+        }
+        this.catchPhrases=['i\'m youtube famous',
+        'i\'m more dangerous than an uncovered sewer']
+     }
+     talkSmack(){
+         console.log(this.catchPhrases[Math.floor(this.catchPhrases.length*Math.random())]);
+     }
+     announceHealth(){
+         console.log('this is enemy currrent health', this.health);
+     }
+     fight(enemy){
+     const  keysweapons= Object.keys(this.weapons);
+       const randomweapon=keysweapons[Math.floor(Math.random()*keysweapons.length)]
+        console.log(keysweapons, 'my weapon');
+        console.log(randomweapon, 'finally my waepons');
+        enemy.health-=this.weapons[randomweapon];
+        console.log(`${enemy.name} got hit by ${randomweapon}! His health is now ${enemy.health}`);
+    
+     }
+ }
+
+//  const enemy1= new Enemy('djfdf');
+//  console.log(enemy1);
+//  enemy1.talkSmack()
+
+const Pizzarat= new Enemy('Pizza Rat');
+
+Pizzarat.talkSmack();
+Pizzarat.announceHealth();
+
+Pizzarat.fight(Dougie);
+Dougie.fight(Pizzarat);
