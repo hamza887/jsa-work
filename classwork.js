@@ -175,3 +175,5 @@ Pizzarat.announceHealth();
 
 Pizzarat.fight(Dougie);
 Dougie.fight(Pizzarat);
+
+let product =(x,y) => x*y
